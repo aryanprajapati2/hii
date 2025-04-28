@@ -1,0 +1,221 @@
+/* Reset and Base Styles */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background: #ffffff;
+  color: #000000;
+}
+
+/* Header */
+header {
+  background: #000000;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+nav a {
+  color: #ffffff;
+  margin-left: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+nav a:hover {
+  color: #cccccc;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+  background: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+.hero p {
+  font-size: 1.3rem;
+}
+
+/* New Product Announcement */
+.new-products {
+  background: #f9f9f9;
+  color: #000000;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+}
+
+.new-products:hover {
+  background: #e0e0e0;
+}
+
+/* Shop Section */
+.shop {
+  padding: 2rem;
+  text-align: center;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.product-card {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 260px;
+  height: 360px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.product-card p {
+  margin: 1rem 0;
+}
+
+.product-card button {
+  margin-top: 10px;
+  padding: 0.75rem;
+  width: 100%;
+  background: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+  background: #333333;
+}
+
+.product-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* About and Contact */
+.about, .contact {
+  background: #ffffff;
+  padding: 3rem 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.about h2, .contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.about p, .contact p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Footer */
+footer {
+  background: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: auto;
+  font-size: 1rem;
+}
+
+/* Login and Cart Pages */
+.login-container, .cart-container {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  margin: 3rem auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2, .cart-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.login-container form, .cart-container ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-container input, .cart-container li {
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+}
+
+.login-container button, #cartItems button {
+  background: #000000;
+  color: #ffffff;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-container button:hover, #cartItems button:hover {
+  background: #333333;
+}
+
+/* Cart items list */
+#cartItems {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#cartItems li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .product-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-card {
+    width: 90%;
+    margin: 1rem 0;
+  }
+}

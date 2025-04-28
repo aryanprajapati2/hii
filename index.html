@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Thrifted Threads | Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Thrifted Threads</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="cart.html">Cart (<span id="cartCount">0</span>)</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <!-- New Product Announcement -->
+  <section id="new-products" class="new-products">
+    <p>🚨 New products coming soon! Stay tuned for the latest vintage drops! 🚨</p>
+  </section>
+
+  <section id="hero" class="hero" data-aos="fade-in">
+    <h1>Thrifted. Timeless. Trendy.</h1>
+    <p>Explore unique, sustainable fashion for all.</p>
+  </section>
+
+  <section id="shop" class="shop">
+    <h2>Shop the Drop</h2>
+    <div class="product-grid" id="productGrid"></div>
+  </section>  
+
+  <section id="about" class="about" data-aos="fade-up">
+    <h2>About Us</h2>
+    <p>At Thrifted Threads, we're dedicated to bringing sustainable fashion to your wardrobe. Our curated collection of unique, thrifted pieces allows you to stand out while helping the planet.</p>
+  </section>
+
+  <section id="contact" class="contact" data-aos="fade-up">
+    <h2>Contact Us</h2>
+    <p>Have a question or want to collaborate? Reach out to us at: contact@thriftedthreads.com</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Thrifted Threads. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    loadProducts();
+  </script>
+</body>
+</html>

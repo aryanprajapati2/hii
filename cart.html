@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    /* Cart Page Styles */
+.cart-container {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 600px;
+  margin: 3rem auto;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.cart-container h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #6F4D38;
+  margin-bottom: 1.5rem;
+}
+
+#cartItems {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+}
+
+#cartItems li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+#cartItems li:last-child {
+  border-bottom: none;
+}
+
+#cartItems button {
+  background: #000000;
+  color: #fff;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+}
+
+#cartItems button:hover {
+  background: #ffffff;
+}
+
+.cart-container p {
+  font-size: 1.2rem;
+  text-align: right;
+  font-weight: bold;
+  color: #3D211A;
+}
+
+  </style>
+<head>
+  <meta charset="UTF-8" />
+  <title>Your Cart | Thrifted Threads</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Thrifted Threads</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="cart.html">Cart (<span id="cartCount">0</span>)</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <div class="cart-container" data-aos="fade-up">
+    <h2>Your Cart</h2>
+    <ul id="cartItems"></ul>
+    <p>Total: $<span id="totalAmount">0</span></p>
+  </div>  
+
+  <footer>
+    <p>&copy; 2025 Thrifted Threads. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    renderCart();
+  </script>
+  <script>
+    
+  </script>
+</body>
+</html>
